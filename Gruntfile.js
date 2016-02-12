@@ -66,14 +66,11 @@ module.exports = function(grunt) {
 		grunt.file.write('index.html', '<!DOCTYPE html>\n<html>\n	<head>\n		<title>PROJECT_NAME</title>\n		<meta charset="utf-8">\n		<link rel="stylesheet" href="css/build/prod.css">\n	</head>\n	<body>\n		<!-- content -->\n		<script src="js/build/prod.min.js"></script>\n	</body>\n</html>');
 		grunt.file.mkdir('css');
 		grunt.file.mkdir('css/build');
-//		grunt.file.write('css/build/prod.css', '');
 		grunt.file.write('css/style.scss', '');
 		grunt.file.mkdir('js');
 		grunt.file.mkdir('js/libs');
 		grunt.file.mkdir('js/build');
 		grunt.file.write('js/main.js', '');
-//		grunt.file.write('kek_dir/file.html', 'content');
-//		grunt.file.write('file.html', 'content');
 	});
 	grunt.registerTask('default', ['sass', 'concat', 'uglify', 'watch']);
 };
