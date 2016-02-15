@@ -63,7 +63,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('init', function(){
 		console.log(':-)');
 		console.log('======== INIT PROJECT ========');
-		grunt.file.write('index.html', '<!DOCTYPE html>\n<html>\n	<head>\n		<title>PROJECT_NAME</title>\n		<meta charset="utf-8">\n		<link rel="stylesheet" href="css/build/prod.css">\n	</head>\n	<body>\n		<!-- content -->\n		<script src="js/build/prod.min.js"></script>\n	</body>\n</html>');
+		grunt.file.write('index.html', '<!DOCTYPE html>\n<html>\n	<head>\n		<title>PROJECT_NAME</title>\n		<meta charset="utf-8">\n		<link rel="stylesheet" href="css/build/prod.css">\n	</head>\n	<body>\n		<!-- content -->\n		<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>\n		<script src="js/build/prod.min.js"></script>\n	</body>\n</html>');
 		grunt.file.mkdir('css');
 		grunt.file.mkdir('css/build');
 		grunt.file.write('css/style.scss', '');
